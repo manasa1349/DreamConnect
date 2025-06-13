@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamConnect - Community</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/jpg" href="img/logo.jpg">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 50, 0.5);
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #e0eaff;
+}
+
+/* Create Team Button */
+.create-team {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #ffe066;
+  color: #1f4b99;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.create-team:hover {
+  transform: scale(1.05);
+}
+    /* Navigation buttons at the top */
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 40, 100, 0.75);
+  z-index: -1;
+}
+
+
+
+/* Create Team Button */
+.create-team {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #ffe066;
+  color: #1f4b99;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.create-team:hover {
+  transform: scale(1.05);
+}
+
+/* Community Grid */
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 50px;
+}
+
+/* User Cards */
+.user-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #ffe066;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+
+
+    /* Chat and Meet buttons */
+    .card-buttons {
+      margin-top: 10px;
+    }
+
+    .card-buttons button {
+      margin: 5px;
+      padding: 6px 14px;
+      border: none;
+      border-radius: 20px;
+      background-color: #00bcd4;
+      color: white;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background-color 0.3s;
+    }
+
+    .no-underline.active {
+      font-weight: bold;
+      color: #ad2f93;
+    }
+
+    .card-buttons button:hover {
+      background-color: #028a96;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Options -->
+  <!-- Header Section -->
+<nav class="header">
+        <div class="nav-left">
+            <div class="logo">DreamConnect</div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item">
+                <a href="index.html" class="no-underline">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="explore1.html" class="no-underline">Explore</a>
+            </div>
+            <div class="nav-item">
+                <a href="mydreamwall.html" class="no-underline">My Dream Wall</a>
+            </div>
+            <div class="nav-item">
+                <a href="community.html" class="no-underline active">Community</a>
+            </div>
+            <div class="nav-item">
+                <a href="Contact_us.html" class="no-underline">Contact Us</a>
+            </div>
+            <div class="nav-item">
+                <a href="about.html" class="no-underline">About us</a>
+            </div>
+            <div class="user">
+                <a href="profile.html" class="no-underline">
+                    <img class="profile-img" src="img/profile.jpg" alt="Profile">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+  <header>
+    <h1>🌐 DreamConnect Community</h1>
+    <p>Connect, Collaborate & Grow Together</p>
+    <button class="create-team"><i class="fas fa-plus"></i> Create Team</button>
+  </header>
+
+  <!-- Followers Section -->
+  <section class="title-section">
+    <h2>My Followers</h2>
+  </section>
+
+  <main class="community-grid">
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Anjali Verma</h2>
+      <p>🎯 Goal: Become a Data Scientist</p>
+      <p>🌱 In Progress (60%)</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Rohit Kumar</h2>
+      <p>🏋‍♂ Goal: Start a Fitness Blog</p>
+      <p>✅ Completed</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Sneha Rao</h2>
+      <p>👩‍💻 Learning Full-Stack Dev</p>
+      <p>🔥 In Progress (80%)</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Arjun Das</h2>
+      <p>🚀 Dream: Launch Tech Startup</p>
+      <p>🌟 Planning Stage</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Related Profiles Section -->
+  <section class="title-section">
+    <h2>Profiles Related to Your Dream</h2>
+  </section>
+
+  <main class="community-grid">
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Meera Joshi</h2>
+      <p>📊 Goal: Master Data Analysis</p>
+      <p>🌱 In Progress (45%)</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Vikram Singh</h2>
+      <p>💻 Dream: Build AI Applications</p>
+      <p>🔥 In Progress (70%)</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Priya Nair</h2>
+      <p>🎓 Learning Machine Learning</p>
+      <p>🌱 In Progress (55%)</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+  </main>
+  <!-- suceeded profiles  -->
+    <h2>Top profiles</h2>
+  </section>
+
+  <main class="community-grid">
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Ajay Kumar</h2>
+      <p>Teacher</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Meera</h2>
+      <p>💻 Full Stack Developer</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Rahul</h2>
+      <p>Fitness Blogger</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+
+    <section class="user-card">
+      <i class="fas fa-user-friends card-icon"></i>
+      <h2>Sushant Sign</h2>
+      <p>Data Analyst</p>
+      <div class="card-buttons">
+        <button><i class="fas fa-comment-dots"></i> Chat</button>
+        <button><i class="fas fa-video"></i> Meet</button>
+      </div>
+    </section>
+  </main>
+
+ <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="img/logo.jpg" alt="DreamConnect Logo" />
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" /></a>
+        </div>
+
+        <div class="app-icons-right">
+          <a href="#" title="Home"><span class="material-symbols-outlined home">home</span></a>
+          <a href="#" title="Share"><span class="material-symbols-outlined share">share</span></a>
+          <a href="#" title="Favorite"><span class="material-symbols-outlined favorite">favorite</span></a>
+        </div>
+
+        <div class="email-subscribe">
+          <form class="subscribe-form">
+            <input type="email" placeholder="Email address*" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h4 style="color:rgba(0,0,255,0.4)">Connect With Us</h4>
+        <p class="label-icon email">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="icon-img" />
+          support@dreamconnect.com
+        </p>
+        <p class="label-icon email">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone Icon" class="icon-img" />
+          +91 98765 43210
+        </p>
+        <p class="location">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location Icon" class="icon-img" />
+          Guntur, Andhra Pradesh, India
+        </p>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.6764558965446!2d80.45429311506446!3d16.306703988867537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f8de9006b9e9%3A0x6b52d01936288cc6!2sGuntur%2C%20Andhra%20Pradesh%20522001!5e0!3m2!1sen!2sin!4v1696764521234!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DreamConnect • Empowering dreams through community</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DreamConnect - Contact Us</title>
+
+  <!-- External Resources -->
+  <link rel="icon" type="image/jpg" href="img/logo.jpg" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0f7fa;
+      color: #033e6b;
+    }
+
+    /* HEADER NAVIGATION */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      color: white;
+      position: sticky;
+      top: 0;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+      z-index: 1;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .no-underline {
+      text-decoration: none;
+      color: white;
+    }
+
+    .no-underline:hover {
+      color: #ad2f93;
+    }
+
+    .no-underline.active {
+      font-weight: bold;
+      color: #ad2f93;
+    }
+
+    .nav-right {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .nav-item {
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+      background-color: rgba(255, 255, 255, 0.2);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-right {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+
+    /* Contact Header */
+    .contact-header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #b3e5fc;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    .contact-form,
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+      background-color: #d0e9fc;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2,
+    .contact-info h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 95%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      display: block;
+    }
+
+    .card-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .card-buttons button {
+      padding: 12px 40px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(to right, #03a9f4, #0288d1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .card-buttons button:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-info img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-info i {
+      font-size: 20px;
+      min-width: 24px;
+      color: inherit;
+    }
+
+    .contact-info .fa-envelope { color: #f44336; }
+    .contact-info .fa-phone { color: #4caf50; }
+    .contact-info .fa-map-marker-alt { color: #ff9800; }
+
+    /* Footer specific layout tweaks are assumed to be in footer.css */
+  </style>
+</head>
+<body>
+  <nav class="header">
+        <div class="nav-left">
+            <div class="logo">DreamConnect</div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item">
+                <a href="index.html" class="no-underline ">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="explore1.html" class="no-underline">Explore</a>
+            </div>
+            <div class="nav-item">
+                <a href="mydreamwall.html" class="no-underline">My Dream Wall</a>
+            </div>
+            <div class="nav-item">
+                <a href="community.html" class="no-underline">Community</a>
+            </div>
+            <div class="nav-item">
+                <a href="Contact_us.html" class="no-underline active">Contact Us</a>
+            </div>
+            <div class="nav-item">
+                <a href="about.html" class="no-underline">About us</a>
+            </div>
+            <div class="user">
+                <a href="profile.html" class="no-underline">
+                    <img class="profile-img" src="img/profile.jpg" alt="Profile">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Contact Header -->
+  <div class="contact-header">
+    <h1>📬 Contact DreamConnect</h1>
+    <p>We’re here to listen, help, and connect!</p>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message / Suggestion" required></textarea>
+          <div class="card-buttons">
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <img
+          src="https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-12860.jpg"
+          alt="Contact Illustration" />
+        <h2>Contact Us</h2>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> support@dreamconnect.com</p>
+        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 98765 43210</p>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Guntur, Andhra Pradesh, India</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="img/logo.jpg" alt="DreamConnect Logo" />
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 24px;" /></a>
+        </div>
+
+        <div class="app-icons-right">
+          <a href="#" title="Home"><span class="material-symbols-outlined">home</span></a>
+          <a href="#" title="Share"><span class="material-symbols-outlined">share</span></a>
+          <a href="#" title="Favorite"><span class="material-symbols-outlined">favorite</span></a>
+        </div>
+
+        <div class="email-subscribe">
+          <form class="subscribe-form">
+            <input type="email" placeholder="Email address*" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h4 style="color:rgba(0,0,255,0.4)">Connect With Us</h4>
+        <p class="label-icon email">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="icon-img" />
+          support@dreamconnect.com
+        </p>
+        <p class="label-icon email">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone Icon" class="icon-img" />
+          +91 98765 43210
+        </p>
+        <p class="location">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location Icon" class="icon-img" />
+          Guntur, Andhra Pradesh, India
+        </p>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.6764558965446!2d80.45429311506446!3d16.306703988867537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f8de9006b9e9%3A0x6b52d01936288cc6!2sGuntur%2C%20Andhra%20Pradesh%20522001!5e0!3m2!1sen!2sin!4v1696764521234!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DreamConnect • Empowering dreams through community</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - DreamConnect</title>
+    <link rel="icon" type="image/jpg" href="img/logo.jpg">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="footer.css" />
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #1e3c72, #2a5298, #5f27cd);
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: white;
+        position: sticky;
+        top: 0;
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        z-index:1;
+    }
+
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .no-underline {
+    text-decoration: none;
+    color: white;
+    }
+    .no-underline:hover {
+        color: #ad2f93;
+    }
+
+    .no-underline1 {
+    text-decoration: none;
+    color: white;
+    }
+    .no-underline1:hover {
+        color: dark rgb(109, 219, 219);
+    }
+
+    .nav-right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .nav-item {
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-item:hover,.nav-item.active {
+        background-color: rgba(255, 255, 255, 0.2);
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8)
+    }
+
+    .profile-img {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        border: 2px solid white;
+    }
+
+    .page-heading {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      margin: 40px 0 20px;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .about-section {
+      padding: 20px 10%;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+    }
+    .about-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      align-items: center;
+      gap: 40px;
+    }
+    .about-row:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .about-image, .about-text {
+      flex: 1 1 45%;
+    }
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+    .about-text h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .about-text p, .about-text ul {
+      font-size: 16px;
+      line-height: 1.8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .about-text ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .quote {
+      margin-top: 15px;
+      font-style: italic;
+      color: #f0f0f0;
+    }
+    .no-underline.active {
+ font-weight: bold;
+ color:#ad2f93;
+}
+.no-underline {
+  text-decoration: none;
+  color: white;
+}
+.no-underline:hover {
+    color:#ad2f93;
+}
+
+    @media (max-width: 768px) {
+      .about-row {
+        flex-direction: column !important;
+      }
+      .about-text, .about-image {
+        flex: 1 1 100%;
+      }
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-right {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="header">
+        <div class="nav-left">
+            <div class="logo">DreamConnect</div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item">
+                <a href="index.html" class="no-underline">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="explore1.html" class="no-underline">Explore</a>
+            </div>
+            <div class="nav-item">
+                <a href="mydreamwall.html" class="no-underline">My Dream Wall</a>
+            </div>
+            <div class="nav-item">
+                <a href="community.html" class="no-underline">Community</a>
+            </div>
+            <div class="nav-item">
+                <a href="Contact_us.html" class="no-underline">Contact Us</a>
+            </div>
+            <div class="nav-item">
+                <a href="about.html" class="no-underline active">About us</a>
+            </div>
+            <div class="user">
+                <a href="profile.html" class="no-underline">
+                    <img class="profile-img" src="img/profile.jpg" alt="Profile">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Main Page Heading -->
+  <h1 class="page-heading">About Us</h1>
+
+  <section class="about-section">
+    <div class="about-row">
+      <div class="about-image">
+        <img src="./img/teamwork.jpg" alt="About DreamConnect" />
+      </div>
+      <div class="about-text">
+        <h2>
+          <span class="material-symbols-outlined">info</span>
+          About DreamConnect 
+        </h2>
+        <p>
+  DreamConnect is a unique platform created to help individuals identify, plan, and achieve their dreams. Whether it's a personal goal, a creative ambition, or a long-term vision, DreamConnect provides the right space and tools to track your journey. With features like dream listing, progress tracking, and a supportive community, we aim to turn your aspirations into reality while keeping you inspired and focused every step of the way.
+</p>
+
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Mission">
+      </div>
+      <div class="about-text">
+        <h2>
+          <span class="material-symbols-outlined">favorite</span>
+           Our Mission
+        </h2>
+        <p>
+  Our mission at DreamConnect is to inspire people to believe in their dreams and take action toward achieving them. We are committed to providing a positive and engaging environment where users can set clear goals, stay motivated, and connect with others on the same journey. By combining useful tools with a strong sense of community, we aim to make the process of chasing dreams more organized, joyful, and achievable.
+</p>
+
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="Vision">
+      </div>
+      <div class="about-text">
+        <h2>
+          <span class="material-symbols-outlined">flag</span>
+          Our Vision
+        </h2>
+        <p>
+  Our vision is to build a world where everyone feels confident to dream big and work towards their goals without fear or hesitation. DreamConnect strives to become a trusted companion in every dreamer’s journey by offering encouragement, guidance, and a sense of belonging. We believe that when people are supported and connected, they can unlock their true potential and achieve greatness together.
+</p>
+
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Why DreamConnect">
+      </div>
+      <div class="about-text">
+        <h2>
+          <span class="material-symbols-outlined">visibility</span>
+           Why DreamConnect?
+        </h2>
+        <ul>
+  <li>Set and manage your personal dreams in a user-friendly space</li>
+  <li>Visually track your achievements through progress charts</li>
+  <li>Connect with a vibrant community of like-minded dreamers</li>
+  <li>Receive motivation, feedback, and support from fellow users</li>
+</ul>
+<p class="quote">"Fulfill Your Dream Before You Die!"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Footer (unstyled) -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="img/logo.jpg" alt="DreamConnect Logo" />
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" /></a>
+        </div>
+
+        <div class="app-icons-right">
+          <a href="#" title="Home"><span class="material-symbols-outlined home">home</span></a>
+          <a href="#" title="Share"><span class="material-symbols-outlined share">share</span></a>
+          <a href="#" title="Favorite"><span class="material-symbols-outlined favorite">favorite</span></a>
+        </div>
+
+        <div class="email-subscribe">
+          <form class="subscribe-form">
+            <input type="email" placeholder="Email address*" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h4 style="color:rgba(0,0,255,0.4)">Connect With Us</h4>
+        <p class="label-icon email">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" class="icon-img" />
+          support@dreamconnect.com
+        </p>
+        <p class="label-icon email">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone Icon" class="icon-img" />
+          +91 98765 43210
+        </p>
+        <p class="location">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location Icon" class="icon-img" />
+          Guntur, Andhra Pradesh, India
+        </p>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.6764558965446!2d80.45429311506446!3d16.306703988867537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f8de9006b9e9%3A0x6b52d01936288cc6!2sGuntur%2C%20Andhra%20Pradesh%20522001!5e0!3m2!1sen!2sin!4v1696764521234!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DreamConnect • Empowering dreams through community</p>
+    </div>
+  </footer>
+</body>
+</html>
